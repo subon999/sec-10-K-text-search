@@ -29,4 +29,6 @@ for index, row in df.iterrows():
     d["Ex"]=findWord(row['Name'],row['CIK']) 
     l.append(d) 
     # In[15]: 
+df_ = pd.DataFrame(l)
+df.to_csv(r'/home/subon999/Downloads/cik_ticker_nrch.csv', index = False)
 findWord("INTERNATIONAL BUSINESS MACHINES CORP","0000051143") 
